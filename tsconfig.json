@@ -1,0 +1,9 @@
+
+// Config proporcionado por Claude Sonnet
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "strict": true
+  }
+}
+
