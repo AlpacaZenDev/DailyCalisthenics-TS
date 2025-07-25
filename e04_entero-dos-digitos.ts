@@ -19,6 +19,7 @@
     }
 
     let numero: number = 80;
+    // TODO: Queda convertir números negativos a positivos
     let resultado: boolean = esDosDigitos(numero);
     if (resultado) {
         console.log(`El número es de dos dígitos`);
