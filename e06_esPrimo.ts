@@ -2,6 +2,8 @@
  * Leer un número entero menor que 20 y determinar si es primo.
  */
 
+(()=>{
+
 function countDivisors(num: number): number  {
     let divisors: number = 0;
     for (let i = 1; i <= num; i++) {
@@ -33,3 +35,5 @@ function evaluateNumber (num: number): void {
 
 const number: number = 20;
 evaluateNumber(number);
+
+})();
