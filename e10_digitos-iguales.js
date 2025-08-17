@@ -4,7 +4,7 @@
  */
 (() => {
     function validateNumber(num) {
-        num = (num < 0) ? Math.abs(num) : num;
+        num = (num < 0) ? Math.abs(num) : num; // estrategia para evitar '&& num >= -99 &&  num <= -10'
         return (Number.isInteger(num) && num >= 10 && num <= 99);
     }
     function compareDigits(num) {
