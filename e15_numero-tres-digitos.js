@@ -15,11 +15,19 @@
             return null;
         }
         const numHundred = Math.trunc(num / 100);
-        const numTen = Math.trunc(num / 10);
+        const numTen = Math.trunc((num % 100) / 10);
         const numUnit = num % 10;
         return (numHundred + numTen + numUnit);
     }
     // Display
     function main() {
+        const result = SumOfDigits(321);
+        if (result === null) {
+            console.log(`Ingrese sólo números enteros potitivos de 3 cifras`);
+        }
+        else {
+            console.log(`Suma de los tres dígitos ${result}`);
+        }
     }
+    main();
 })();
