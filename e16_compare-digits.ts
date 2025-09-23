@@ -7,7 +7,7 @@
 (()=>{
 
     //* Validation
-    function ValidateNumber(num:number) {
+    function ValidateNumber(num: number): boolean {
         num = Math.abs(num);
         if (!Number.isInteger(num)) return false;
         return (num >= 100 && num <= 999);
@@ -17,7 +17,7 @@
     // todo: ¿Cómo valido mediante debug? -> Prácticar ambos métodos
     
     //* Logic
-    function CompareDigits(num:number): any {
+    function CompareDigits(num:number): boolean | null {
         if (!ValidateNumber(num)) return null;
         
         num = Math.abs(num);
@@ -27,14 +27,11 @@
         // console.log(numHundred);
         // console.log(numTen);
         // console.log(numUnit);
-        
+
+        return (numUnit === numTen || numUnit === numHundred || numTen === numHundred);
 
     }
-    CompareDigits(456) // Evaluar parcialmente;
-
-
-    //* Display
-
+    // CompareDigits(456) // Evaluar parcialmente;
 
 
 })();

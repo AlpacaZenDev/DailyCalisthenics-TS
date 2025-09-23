@@ -24,7 +24,7 @@
         // console.log(numHundred);
         // console.log(numTen);
         // console.log(numUnit);
+        return (numUnit === numTen || numUnit === numHundred || numTen === numHundred);
     }
-    CompareDigits(456); // Evaluar parcialmente;
-    //* Display
+    // CompareDigits(456) // Evaluar parcialmente;
 })();
