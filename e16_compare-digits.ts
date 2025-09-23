@@ -14,7 +14,6 @@
     }
     
     // console.log(ValidateNumber(999));
-    // todo: ¿Cómo valido mediante debug? -> Prácticar ambos métodos
     
     //* Logic
     function CompareDigits(num:number): boolean | null {
@@ -33,5 +32,19 @@
     }
     // CompareDigits(456) // Evaluar parcialmente;
 
+
+    //* Display
+    function main(): void {
+        const num: number = 311;
+        const result: any = CompareDigits(num);
+
+        if (result) {
+            console.log(`El número ${num} tiene al menos un dígito repetido`);
+        } else {
+            console.log(`El número ${num} tiene sus dígitos diferentes`);
+        }
+    }
+
+    main();
 
 })();

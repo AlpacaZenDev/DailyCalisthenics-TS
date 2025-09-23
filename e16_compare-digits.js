@@ -12,7 +12,6 @@
         return (num >= 100 && num <= 999);
     }
     // console.log(ValidateNumber(999));
-    // todo: ¿Cómo valido mediante debug? -> Prácticar ambos métodos
     //* Logic
     function CompareDigits(num) {
         if (!ValidateNumber(num))
@@ -27,4 +26,16 @@
         return (numUnit === numTen || numUnit === numHundred || numTen === numHundred);
     }
     // CompareDigits(456) // Evaluar parcialmente;
+    //* Display
+    function main() {
+        const num = 311;
+        const result = CompareDigits(num);
+        if (result) {
+            console.log(`El número ${num} tiene al menos un dígito repetido`);
+        }
+        else {
+            console.log(`El número ${num} tiene sus dígitos diferentes`);
+        }
+    }
+    main();
 })();
