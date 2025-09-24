@@ -13,6 +13,7 @@
     }
     // ValidateNumber(999);
     // *Logic
+    // todo: Sólo para números con digitos no iguales. Queda implementación para dítos iguales.
     function PositionOfMajorDigit(num) {
         num = Math.abs(num);
         const numHundred = Math.trunc(num / 100);
@@ -32,4 +33,19 @@
     }
     // PositionOfMajorDigit(-345);
     // *View
+    function main() {
+        const num = -222;
+        if (!ValidateNumber(num)) {
+            console.log(`Ingrese sólo números enteros de 3 cifras!`);
+        }
+        else {
+            const result = PositionOfMajorDigit(num);
+            console.log(`El dígito mayor se encuentra en la ${result}`);
+        }
+    }
+    main();
+    // todo: debugging o test de integración
+    // todo: ampliar la lógica para números con 2 dígitos mayores iguales
+    // todo: evaluar para un número con los 3 dígitos iguales
+    // todo: realizar pruebas automatizadas por IA.
 })();
