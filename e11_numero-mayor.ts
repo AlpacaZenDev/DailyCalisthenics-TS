@@ -2,6 +2,7 @@
 
 // Leer dos números enteros y determinar cuál es el mayor.
 
+
 (()=>{
 
     function compareNumbers(numA: number, numB: number): string {
